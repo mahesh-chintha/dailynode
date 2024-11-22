@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="btn1">click me</button> 
+   
+ <script>
+    var btn1 = document.getElementById('btn1');
+
+    class person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        per() {
+            return `my name is ${this.name} and I am ${this.age} years old.`;
+        }
+    }
+
+    var out = new person("alice", 25);
+
+    btn1.addEventListener("click",out.per());
+ </script>    
+</body>
+</html>
